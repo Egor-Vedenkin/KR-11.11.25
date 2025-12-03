@@ -2,7 +2,8 @@ public class Employee {
     private String name;
     private int department;
     private int salary;
-    private static int id;
+    private int id;
+    private static int counter;
 
     Employee(String name, int department, int salary, int id) {
         this.name = name;
@@ -28,6 +29,10 @@ public class Employee {
         this.salary = salary;
     }
 
+    public int getId() {
+        return this.id;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -44,5 +49,7 @@ public class Employee {
     public void printShortInfo() {
         System.out.println("ФИО: " + this.name + " Зарплата: " + this.salary);
     }
+
+
 
 }
