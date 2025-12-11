@@ -34,6 +34,7 @@ public class EmployeeBook {
                         System.out.println("Налог у " + employees[i].getName() + " составляет: " + employees[i].getSalary() * 0.13);
                     }
                 }
+                break;
             case "PROGRESSIVE":
                 for (int i = 0; i < employees.length; i++) {
                     if (employees[i] != null) {
