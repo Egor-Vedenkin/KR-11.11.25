@@ -10,7 +10,6 @@ public class Employee {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        this.id = id;
         this.id = counter++;
     }
 
